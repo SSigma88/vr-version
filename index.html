@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR Lithium Atom - Exact Visual Match</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: white">
+      
+      <a-entity position="0 2 12">
+        <a-camera look-controls="enabled: false" wasd-controls="enabled: false"></a-camera>
+      </a-entity>
+
+      <a-entity id="atom" position="0 2 0">
+        
+        <a-sphere 
+          radius="0.7" 
+          src="waternormals.jpg"
+          color="red"
+          segments-height="32">
+        </a-sphere>
+
+        <a-entity rotation="0 0 0">
+          <a-torus arc="360" radius="5" radius-tubular="0.03" segments-tubular="128" segments-radial="8" color="black" opacity="0.6" scale="0.38 1 1">
+            <a-entity animation="property: rotation; to: 0 0 360; loop: true; dur: 4100; easing: linear">
+              <a-sphere position="5 0 0" radius="0.18" color="#f54242" segments-height="12"></a-sphere>
+            </a-entity>
+          </a-torus>
+        </a-entity>
+
+        <a-entity rotation="0 0 60">
+          <a-torus arc="360" radius="5" radius-tubular="0.03" segments-tubular="128" segments-radial="8" color="black" opacity="0.6" scale="0.38 1 1">
+            <a-entity animation="property: rotation; to: 0 0 360; loop: true; dur: 5800; easing: linear">
+              <a-sphere position="5 0 0" radius="0.18" color="#4287f5" segments-height="12"></a-sphere>
+            </a-entity>
+          </a-torus>
+        </a-entity>
+
+        <a-entity rotation="0 0 120">
+          <a-torus arc="360" radius="5" radius-tubular="0.03" segments-tubular="128" segments-radial="8" color="black" opacity="0.6" scale="0.38 1 1">
+            <a-entity animation="property: rotation; to: 0 0 360; loop: true; dur: 7500; easing: linear">
+              <a-sphere position="5 0 0" radius="0.18" color="#5cd65c" segments-height="8"></a-sphere>
+            </a-entity>
+          </a-torus>
+        </a-entity>
+
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
